@@ -34,6 +34,8 @@ body {
   max-width: 700px;
   margin-top: 0;
   margin-bottom: 0;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
 }
 
 /* ======= LAYOUT ======= */
@@ -89,7 +91,7 @@ body {
   padding: 2.5rem 2.5rem 2rem 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
-  background: #fff;
+  background: #FFDE7;
 }
 
 /* ======= CAROUSEL ======= */
@@ -106,7 +108,7 @@ body {
 }
 
 .carousel-panel {
-  background: #FFFDE7;
+  background: #fff;
   border-radius: 14px;
   padding: 1.5rem 1rem;
   box-shadow: 0 1px 8px rgba(230,200,50,0.04);
@@ -186,4 +188,33 @@ body {
   .carousel-panel {
     padding: 1rem 0.5rem;
   }
+  .sitemap-panel {
+  width: 100%;
+  background: #fff;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.sitemap-btn {
+  background: none;
+  border: 1px solid #ccc;
+  color: #222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0 0.6rem;
+  padding: 0.6em 1.6em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.sitemap-btn:hover {
+  background: #f5f5dc;
+  border-color: #b8b8b8;
+  color: #4B2E05;
+}
 }
