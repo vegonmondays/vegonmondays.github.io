@@ -189,6 +189,9 @@ body {
     padding: 1rem 0.5rem;
   }
  .footer-sitemap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background: #fff;
   padding: 1.2rem 0;
@@ -196,10 +199,8 @@ body {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #eee;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  margin-top: 2rem;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
 }
 
 .footer-link {
@@ -217,4 +218,8 @@ body {
   color: #222;
 }
 
+/* Optional: Add bottom padding to your main content so it doesn't hide behind the sticky footer */
+.content {
+  padding-bottom: 4rem;
+}
 }
