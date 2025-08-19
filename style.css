@@ -6,12 +6,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ======= TOP PANEL (title + intro) ======= */
+/* ======= TOP PANEL (Title + Intro) ======= */
 .top-panel {
   background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 2.2rem 2rem 1.2rem 2rem;
-  /* Rectangle panel at top, white */
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2.2rem 2.8rem 1.7rem 2.8rem;
+  /* Stretches full width, with generous side padding */
 }
 
 .top-title {
@@ -19,18 +21,19 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4B2E05; /* Dark brown */
-  margin-bottom: 0.25rem;
+  color: #4B2E05;
   text-align: left;
+  margin-bottom: 0.45rem;
 }
 
 .top-intro {
-  font-family: Helvetica;
-  font-size: 1.05rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.08rem;
   color: #222;
   text-align: left;
   max-width: 700px;
-  margin-top: 0.1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ======= LAYOUT ======= */
@@ -40,7 +43,7 @@ body {
 }
 
 .sidebar {
-  background: #eef5dc;
+  background: #f5f5dc;
   width: 300px;
   padding: 2rem 1rem 1rem 1rem;
   box-sizing: border-box;
@@ -69,7 +72,7 @@ body {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: text-decoration 0.2s;
   padding: 4px 8px;
   border-radius: 4px;
@@ -84,7 +87,7 @@ body {
 .content {
   flex: 1;
   padding: 2.5rem 2.5rem 2rem 2.5rem;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   background: #fff;
 }
@@ -102,7 +105,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Carousel panel with light yellow background */
 .carousel-panel {
   background: #FFFDE7;
   border-radius: 14px;
@@ -163,7 +165,7 @@ body {
     gap: 1.1rem;
   }
   .top-panel {
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 1.4rem 1rem 1.1rem 1rem;
   }
 }
 
