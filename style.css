@@ -188,19 +188,21 @@ body {
   .carousel-panel {
     padding: 1rem 0.5rem;
   }
-  .sitemap-panel {
+ .footer-sitemap {
   width: 100%;
   background: #fff;
   padding: 1.2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   border-top: 1px solid #eee;
   position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 2rem;
 }
 
-.sitemap-link {
+.footer-link {
   color: #4B2E05;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -210,7 +212,7 @@ body {
   transition: color 0.2s;
 }
 
-.sitemap-link:hover {
+.footer-link:hover {
   text-decoration: underline;
   color: #222;
 }
