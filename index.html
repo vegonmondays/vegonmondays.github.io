@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>vegonmondays</title>
-    <!-- Google Fonts for Header and Body -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>vegonmondays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Quintessential for site name, Merriweather for content, Montserrat for sidebar -->
+  <link href="https://fonts.googleapis.com/css?family=Quintessential&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        vegonmondays
-    </header>
-    <nav class="sidebar">
-        <a href="index.html">Home</a>
-    </nav>
-    <div class="main-content">
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-title">vegonmondays</div>
+      <nav>
+        <ul>
+          <li><a href="article-1.html">First Day in Kyoto</a></li>
+          <li><a href="article-2.html">A Rainy Tuesday</a></li>
+          <li><a href="article-3.html">Unexpected Joys</a></li>
+          <!-- Add more links as you add articles -->
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <section class="intro">
+        <h1>Welcome to vegonmondays</h1>
         <p>
-           A personal site dedicated to documenting the happenings of life
+          A personal digital journal dedicated to documenting the happenings of life. 
+        These are honest reflections and stories that make up my life. 
         </p>
-    </div>
+      </section>
+      <section class="carousel">
+        <h2>Recent Articles</h2>
+        <div class="carousel-tiles">
+          <!-- Example tiles, link and preview text should be updated with actual content -->
+          <a class="tile" href="article-1.html">
+            <div class="tile-title">First Day in Kyoto</div>
+            <div class="tile-date">August 18, 2025</div>
+            <div class="tile-snippet">I arrived in Kyoto today, greeted by the gentle hum of cicadas...</div>
+          </a>
+          <a class="tile" href="article-2.html">
+            <div class="tile-title">A Rainy Tuesday</div>
+            <div class="tile-date">August 17, 2025</div>
+            <div class="tile-snippet">Rain pattered on the window as I wrote this entry, cozy indoors...</div>
+          </a>
+          <a class="tile" href="article-3.html">
+            <div class="tile-title">Unexpected Joys</div>
+            <div class="tile-date">August 16, 2025</div>
+            <div class="tile-snippet">Sometimes, the best moments come from plans gone awry...</div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
