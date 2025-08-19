@@ -1,7 +1,3 @@
-/*
-  ======= BASIC STYLES =======
-  Pure white background, all text black, Arial font everywhere except sidebar title.
-*/
 body {
   margin: 0;
   padding: 0;
@@ -15,30 +11,25 @@ body {
   min-height: 100vh;
 }
 
-/*
-  ======= SIDEBAR =======
-  Light beige color, vertical layout, navigation links.
-*/
 .sidebar {
-  background: #f5f5dc;      /* Light beige */
-  width: 210px;
+  background: #f5f5dc;
+  width: 300px;
   padding: 2rem 1rem 1rem 1rem;
   box-sizing: border-box;
   min-height: 100vh;
   border-right: 1px solid #eee;
 }
 
-/* Sidebar title in Quintessential font, black */
 .sidebar-title {
-  font-family: 'Quintessential', cursive;
-  font-size: 2.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;      /* Smaller font size */
+  font-weight: normal;
   letter-spacing: 2px;
   margin-bottom: 2rem;
   text-align: center;
   color: #111;
 }
 
-/* Sidebar navigation */
 .sidebar nav ul {
   list-style: none;
   padding: 0;
@@ -53,8 +44,8 @@ body {
   color: #111;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: normal;          /* Remove bold */
+  font-size: 0.95rem;           /* Smaller font size */
   transition: text-decoration 0.2s;
   padding: 4px 8px;
   border-radius: 4px;
@@ -66,10 +57,6 @@ body {
   background: #f1eedc;
 }
 
-/*
-  ======= MAIN CONTENT =======
-  Right side, holds intro and carousel. Centered, max width for readability.
-*/
 .content {
   flex: 1;
   padding: 2.5rem 2.5rem 2rem 2.5rem;
@@ -78,14 +65,13 @@ body {
   background: #fff;
 }
 
-/* Intro section */
 .intro {
   margin-bottom: 3rem;
 }
 
 .intro h1 {
   font-size: 2rem;
-  font-family: 'Quintessential', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   color: #111;
   margin-bottom: 0.5rem;
 }
@@ -95,7 +81,6 @@ body {
   color: #222;
 }
 
-/* ======= CAROUSEL / RECENT ARTICLES ======= */
 .carousel {
   margin-bottom: 2rem;
 }
@@ -155,10 +140,6 @@ body {
   flex: 1;
 }
 
-/*
-  ======= ARTICLE BODY (for article pages) =======
-  Smaller font size for reading, tight and minimalist.
-*/
 .article-title {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -180,7 +161,6 @@ body {
   color: #222;
 }
 
-/* Responsive design: stack sidebar on top for small screens */
 @media (max-width: 900px) {
   .carousel-tiles {
     flex-direction: column;
