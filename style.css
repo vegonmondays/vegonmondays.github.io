@@ -6,15 +6,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ======= TOP PANEL (title + intro) ======= */
+.top-panel {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 2.2rem 2rem 1.2rem 2rem;
+  /* Rectangle panel at top, white */
+}
+
+.top-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4B2E05; /* Dark brown */
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.top-intro {
+  font-family: Helvetica;
+  font-size: 1.05rem;
+  color: #222;
+  text-align: left;
+  max-width: 700px;
+  margin-top: 0.1rem;
+}
+
+/* ======= LAYOUT ======= */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
 .sidebar {
-  background: #def5dc;
+  background: #eef5dc;
   width: 300px;
-  padding: 1.2rem 1rem 1rem 1rem; /* moved up a bit */
+  padding: 2rem 1rem 1rem 1rem;
   box-sizing: border-box;
   min-height: 100vh;
   border-right: 1px solid #eee;
@@ -22,27 +50,8 @@ body {
   flex-direction: column;
 }
 
-.sidebar-title {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.3rem;                /* Large, most visible */
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #4B2E05;                    /* Dark brown */
-  margin-top: 0.3rem;                /* Moved up */
-  margin-bottom: 0.6rem;             /* Small space below */
-  text-align: center;
-}
-
-.intro {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;                   /* Smaller than title */
-  color: #222;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .sidebar nav {
-  margin-top: 2.5rem; /* Push links lower, so first article aligns with carousel title */
+  margin-top: 2.5rem;
 }
 
 .sidebar nav ul {
@@ -59,7 +68,7 @@ body {
   color: #111;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;          /* No bold */
+  font-weight: normal;
   font-size: 0.95rem;
   transition: text-decoration 0.2s;
   padding: 4px 8px;
@@ -80,7 +89,7 @@ body {
   background: #fff;
 }
 
-/* ======= CAROUSEL / RECENT ARTICLES ======= */
+/* ======= CAROUSEL ======= */
 .carousel {
   margin-bottom: 2rem;
 }
@@ -88,8 +97,8 @@ body {
 .carousel h2 {
   font-size: 1.2rem;
   color: #111;
-  font-family: Helvetica, Arial, sans-serif; /* Helvetica font */
-  font-weight: normal;                      /* No bold */
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
@@ -136,7 +145,7 @@ body {
 }
 
 .tile-date {
-  font-size: 0.85rem;    /* Reduced font size */
+  font-size: 0.85rem;
   color: #555;
   margin-bottom: 0.6rem;
   font-style: italic;
@@ -148,32 +157,13 @@ body {
   flex: 1;
 }
 
-/* ======= ARTICLE BODY (for article pages) ======= */
-.article-title {
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #111;
-  margin-bottom: 0.25rem;
-}
-
-.article-date {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.article-body {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #222;
-}
-
 @media (max-width: 900px) {
   .carousel-tiles {
     flex-direction: column;
     gap: 1.1rem;
+  }
+  .top-panel {
+    padding: 1.5rem 1rem 1rem 1rem;
   }
 }
 
