@@ -51,7 +51,7 @@ body {
 }
 
 .sidebar {
-  background: #f5f5dc;
+  background: #FFFDF5;
   width: 300px;
   padding: 2rem 1rem 1rem 1rem;
   box-sizing: border-box;
@@ -94,15 +94,16 @@ body {
 
 .content {
   flex: 1;
-  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 2.5rem 2rem 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
-  background: #FFFDE7;
+  background: #FFFEF5;
   padding-bottom: 5rem;
 }
 
 /* ======= CAROUSEL ======= */
 .carousel {
+  margin-top: -0.75rem;
   margin-bottom: 2rem;
 }
 
