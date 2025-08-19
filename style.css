@@ -47,7 +47,7 @@ body {
 .container {
   display: flex;
   min-height: 100vh;
-  padding-top: 3rem;
+  padding-top: 6.5rem;
 }
 
 .sidebar {
@@ -116,10 +116,10 @@ body {
 }
 
 .carousel-panel {
-  background: #fff;
+  background: #FFFDE7;
   border-radius: 14px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 1px 8px rgba(230,200,50,0.04);
+  box-shadow: none;
 }
 
 .carousel-tiles {
@@ -202,7 +202,7 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background: #fff;
   padding: 1.2rem 0;
   display: flex;
