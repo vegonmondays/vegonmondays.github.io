@@ -6,44 +6,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ======= TOPBAR FOR TITLE AND INTRO ======= */
-.topbar {
-  display: flex;
-  align-items: center;
-  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-.sidebar-title {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.6rem;                /* Large, most visible */
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #4B2E05;                    /* Dark brown */
-  margin-right: 2.5rem;
-  white-space: nowrap;
-}
-
-.intro {
-  font-size: 1rem;                  /* Two sizes smaller than title, adjust if needed */
-  color: #222;
-  max-width: 600px;
-}
-
-/* ======= SIDEBAR (NO TITLE) ======= */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
 .sidebar {
-  background: #f5f5dc;
+  background: #def5dc;
   width: 300px;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1.2rem 1rem 1rem 1rem; /* moved up a bit */
   box-sizing: border-box;
   min-height: 100vh;
   border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.3rem;                /* Large, most visible */
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4B2E05;                    /* Dark brown */
+  margin-top: 0.3rem;                /* Moved up */
+  margin-bottom: 0.6rem;             /* Small space below */
+  text-align: center;
+}
+
+.intro {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;                   /* Smaller than title */
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar nav {
+  margin-top: 2.5rem; /* Push links lower, so first article aligns with carousel title */
 }
 
 .sidebar nav ul {
@@ -61,7 +60,7 @@ body {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;          /* No bold */
-  font-size: 0.95rem;           /* Smaller font */
+  font-size: 0.95rem;
   transition: text-decoration 0.2s;
   padding: 4px 8px;
   border-radius: 4px;
@@ -89,9 +88,17 @@ body {
 .carousel h2 {
   font-size: 1.2rem;
   color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;        /* No bold */
+  font-family: Helvetica, Arial, sans-serif; /* Helvetica font */
+  font-weight: normal;                      /* No bold */
   margin-bottom: 1rem;
+}
+
+/* Carousel panel with light yellow background */
+.carousel-panel {
+  background: #FFFDE7;
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 8px rgba(230,200,50,0.04);
 }
 
 .carousel-tiles {
@@ -129,7 +136,7 @@ body {
 }
 
 .tile-date {
-  font-size: 0.95rem;
+  font-size: 0.85rem;    /* Reduced font size */
   color: #555;
   margin-bottom: 0.6rem;
   font-style: italic;
@@ -141,6 +148,7 @@ body {
   flex: 1;
 }
 
+/* ======= ARTICLE BODY (for article pages) ======= */
 .article-title {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -167,15 +175,6 @@ body {
     flex-direction: column;
     gap: 1.1rem;
   }
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-  }
-  .sidebar-title {
-    margin-right: 0;
-    margin-bottom: 1.2rem;
-  }
 }
 
 @media (max-width: 700px) {
@@ -191,5 +190,8 @@ body {
   }
   .content {
     padding: 1.5rem 1rem;
+  }
+  .carousel-panel {
+    padding: 1rem 0.5rem;
   }
 }
