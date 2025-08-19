@@ -11,12 +11,13 @@ body {
   background: #fff;
   z-index: 200;
   border-bottom: 1px solid #eee;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding: 2.2rem 2.8rem 1.7rem 2.8rem;
   position: fixed;
   top: 0; 
   left: 0;
+  right: 0;
   
   
 }
@@ -39,7 +40,6 @@ body {
   max-width: 700px;
   margin-top: 0;
   margin-bottom: 0;
-  white-space: nowrap;
   
 }
 
@@ -81,7 +81,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1rem;
-  transition: text-decoration 0.2s;
+  transition: color 0.2s, background-color 0.2s;
   padding: 4px 8px;
   border-radius: 4px;
   display: block;
@@ -177,6 +177,9 @@ body {
   .top-panel {
     padding: 1.4rem 1rem 1.1rem 1rem;
   }
+  .container {
+    padding-top: 4.5rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -198,11 +201,18 @@ body {
   }
 }
 
- .footer-sitemap {
+@media (min-width: 901px) {
+  .top-intro {
+    white-space: nowrap;
+  }
+}
+
+.footer-sitemap {
   position: fixed;
   left: 0;
+  right: 0;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   background: #fff;
   padding: 1.2rem 0;
   display: flex;
