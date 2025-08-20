@@ -110,7 +110,7 @@ body {
 
 /* ======= ARTICLE ======= */
 .article {
-  margin-top: 1.6rem;
+  margin-top: 2.4rem;
 }
 
 .article-title {
@@ -119,15 +119,23 @@ body {
   font-weight: normal;
   color: #111;
   margin: 0 0 0.3rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .article-date {
   font-size: 0.8rem;
   color: #555;
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   font-style: italic;
+}
+
+/* Article header row: title left, date right, with side padding only here */
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
 }
 
 .article-content p {
