@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const REPO_ROOT = process.cwd();
+const ARTICLES_DIR = path.join(REPO_ROOT, 'Articles');
 
 function listHtmlFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -75,7 +76,11 @@ function isContentPage(file) {
 }
 
 function main() {
-  const files = listHtmlFiles(REPO_ROOT).filter(isContentPage);
+  if (!fs.existsSync(ARTICLES_DIR)) {
+    console.error('Articles directory not found at ./Articles');
+    process.exit(0);
+  }
+  const files = listHtmlFiles(ARTICLES_DIR).filter(isContentPage);
   const articles = files.map((absPath) => {
     const html = fs.readFileSync(absPath, 'utf8');
     const rel = path.relative(REPO_ROOT, absPath).split(path.sep).join('/');
