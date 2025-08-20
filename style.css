@@ -110,7 +110,7 @@ body {
 
 /* ======= ARTICLE ======= */
 .article {
-  margin-top: 0.5rem;
+  margin-top: 1.6rem;
 }
 
 .article-title {
@@ -119,17 +119,19 @@ body {
   font-weight: normal;
   color: #111;
   margin: 0 0 0.3rem 0;
+  text-align: center;
 }
 
 .article-date {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #555;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
 .article-content p {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.7;
   color: #222;
   margin: 0 0 1rem 0;
