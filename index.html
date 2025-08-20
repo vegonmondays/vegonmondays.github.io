@@ -5,6 +5,7 @@
   <title>veg on mondays</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script defer src="site.js"></script>
 </head>
 <body>
   <!-- Top full-width panel -->
@@ -17,36 +18,15 @@
   <div class="container">
     <aside class="sidebar">
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Cacophony of noises.html">Cacophony of noises</a></li>
-          <li><a href="Does fear work where patience can't?.html">Does fear work where patience can't?</a></li>
-          <li><a href="article-1.html">First Day in Kyoto</a></li>
-          <li><a href="article-2.html">A Rainy Tuesday</a></li>
-          <li><a href="article-3.html">Unexpected Joys</a></li>
+        <ul id="sidebar-list">
+          
         </ul>
       </nav>
     </aside>
     <main class="content">
       <section class="carousel">
         <div class="carousel-panel">
-          <div class="carousel-tiles">
-            <a class="tile" href="article-1.html">
-              <div class="tile-title">First Day in Kyoto</div>
-              <div class="tile-date">August 18, 2025</div>
-              <div class="tile-snippet">I arrived in Kyoto today, greeted by the gentle hum of cicadas...</div>
-            </a>
-            <a class="tile" href="article-2.html">
-              <div class="tile-title">A Rainy Tuesday</div>
-              <div class="tile-date">August 17, 2025</div>
-              <div class="tile-snippet">Rain pattered on the window as I wrote this entry, cozy indoors...</div>
-            </a>
-            <a class="tile" href="article-3.html">
-              <div class="tile-title">Unexpected Joys</div>
-              <div class="tile-date">August 16, 2025</div>
-              <div class="tile-snippet">Sometimes, the best moments come from plans gone awry...</div>
-            </a>
-          </div>
+          <div id="carousel-tiles" class="carousel-tiles"></div>
         </div>
       </section>
     </main>
