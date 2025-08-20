@@ -95,7 +95,7 @@ body {
 
 .content {
   flex: 1;
-  padding: 2rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 3rem 2rem 3rem;
   max-width: 1100px;
   margin: 0 auto;
   background: transparent;
@@ -135,7 +135,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0 2.5rem;
+  padding: 0 3rem;
 }
 
 .article-content p {
